@@ -1,0 +1,23 @@
+EXTRACT capt
+
+-- Extract database user login, with alias to credentials in the credential store.
+
+USERIDALIAS ogg1
+
+-- Remote host to where captured data is sent in encrypted format:
+
+RMTHOSTOPTIONS sysb, MGRPORT 7809, ENCRYPT AES192 KEYNAME mykey
+
+-- Encryption specification for trail data
+
+ENCRYPTTRAIL AES192
+
+-- Remote trail on the remote host
+
+RMTTRAIL /ggs/dirdat/aa
+
+-- TABLE statements that identify data to capture.
+
+TABLE FIN.*;
+
+TABLE SALES.*;
