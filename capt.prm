@@ -8,6 +8,8 @@ USERIDALIAS ogg1
 
 RMTHOSTOPTIONS sysb, MGRPORT 7809, ENCRYPT AES192 KEYNAME mykey
 
+manohar123
+
 -- Encryption specification for trail data
 
 ENCRYPTTRAIL AES192
